@@ -2,6 +2,8 @@
 
 Simple plugin for checking the latest version of the Python package in Vim.
 
+![Screenshot](snapshot.gif)
+
 ## Requirements
 
 - [webapi-vim][]
@@ -15,8 +17,8 @@ Simple plugin for checking the latest version of the Python package in Vim.
 ## Install
 
 *  [Pathogen](https://github.com/tpope/vim-pathogen)
-    * `git clone https://github.com/mattn/webapi-vim.git ~/.vim/bundle/webapi-vim`
     * `git clone https://github.com/7kfpun/pypi.vim.git ~/.vim/bundle/pypi.vim`
+    * `git clone https://github.com/mattn/webapi-vim.git ~/.vim/bundle/webapi-vim`
 *  [vim-plug](https://github.com/junegunn/vim-plug)
     * `Plug 'mattn/webapi-vim'`
     * `Plug '7kfpun/pypi.vim'`

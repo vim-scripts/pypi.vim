@@ -1,4 +1,4 @@
-" pypi - Simple plugin for checking the latest version of the Python package in Vim.
+" pypi - Get the latest version of the package in Vim
 " Maintainer: kf <7kfpun@gmail.com>
 
 scriptencoding utf-8
@@ -37,7 +37,9 @@ endfunction
 function! s:ReplaceLatestVersion(line_number, text)
     let old_line = getline(a:line_number)
     if old_line =~ a:text
-        echomsg 'It is already the latest version.'
+        if g:pypi_print_results
+            echomsg 'It is already the latest version.'
+        endif
         return
     endif
 
